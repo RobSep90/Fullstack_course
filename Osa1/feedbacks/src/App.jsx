@@ -20,12 +20,14 @@ if (props.all === 0)
 }
   return(
   <table>
-    <tr><StatisticLine text="Good" value={props.good}/></tr>
-    <tr><StatisticLine text="Bad" value={props.bad}/></tr>
-    <tr><StatisticLine text="Neutral" value={props.neutral}/></tr>
-    <tr><StatisticLine text="Positive" value={props.positive}/></tr>
-    <tr><StatisticLine text="All" value={props.all}/></tr>
-    <tr><StatisticLine text="Average" value={(props.good-props.bad)/props.all}/></tr>  
+    <tbody>
+    <StatisticLine text="Good" value={props.good}/>
+    <StatisticLine text="Bad" value={props.bad}/>
+    <StatisticLine text="Neutral" value={props.neutral}/>
+    <StatisticLine text="Positive" value={props.positive}/>
+    <StatisticLine text="All" value={props.all}/>
+    <StatisticLine text="Average" value={(props.good-props.bad)/props.all}/>
+   </tbody>
   </table>
 )
 }
